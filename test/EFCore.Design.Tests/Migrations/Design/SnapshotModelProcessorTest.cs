@@ -126,7 +126,7 @@ namespace Microsoft.EntityFrameworkCore.Migrations.Internal
         public void Does_not_process_non_v1_models()
         {
             var model = new Model();
-            model.SetProductVersion("2.0.0");
+            model.SetProductVersion("2.1.0");
             model["Unicorn:DefaultSchema"] = "Value";
 
             Assert.Equal(2, model.GetAnnotations().Count());
